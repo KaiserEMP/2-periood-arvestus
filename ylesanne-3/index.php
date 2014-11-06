@@ -1,10 +1,15 @@
+  <?php 
+      $username = "username";
+      $sex = "sex";
+      $submit = 'submit'; 
+    ?> 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>II perioodi arvestustöö - Ülesanne 2 - POST päring</title>
   </head>
-
+  <?php $site_link= "result.php"; ?>
   <body>
     <form>
       <div class="form-field" action="result.php" method="post">
@@ -23,6 +28,7 @@
 
       <div class="form-field">
         <input type="submit" value="submit" name="submit">
+
       </div>
     </form>
   </body>

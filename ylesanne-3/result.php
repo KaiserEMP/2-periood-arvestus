@@ -12,7 +12,9 @@
       $submit = $_POST['submit']; 
     ?> 
 
-
+  <?php $username = isset($_POST['username']); ?>
+  <?php $sex = isset($_POST['sex']); ?>
+  <?php $submit = isset($_POST['submit']); ?>
     <!-- Kustuta see funktsioon (print_r() koos <pre> elemendiga) pärast seda, kui oled veendunud, et programm töötab. -->
     <pre><?php print_r($_POST); ?></pre>
 
