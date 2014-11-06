@@ -1,3 +1,12 @@
+<?php 
+  session_start(); 
+  	$validPassword = $_SESSION["password"];
+	$validUsername = $_SESSION["username"];
+    
+  ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,8 +15,15 @@
   </head>
 
   <body>
-    <!-- Kustuta see funktsioon (print_r() koos <pre> elemendiga) pärast seda, kui oled veendunud, et programm töötab. -->
-    <pre><?php print_r($_SESSION); ?></pre>
+
+  	<?php
+
+	    if ($validUsername = $_SESSION["username"] && $validPassword = $_SESSION["password"]) {
+	    	echo "Kasutajanimi ja parool on õiged." ;
+	    }else{
+	    	echo "Kasutajanimi ja/või parool ei klapi.";
+	    }
+    ?>
 
     <a href="index.php">Mine tagasi</a>
   </body>
