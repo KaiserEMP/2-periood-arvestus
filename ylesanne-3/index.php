@@ -7,7 +7,7 @@
 
   <body>
     <form>
-      <div class="form-field">
+      <div class="form-field" action="result.php" method="post">
         <input type="text" name="username" placeholder="Kasutajanimi">
       </div>
 
@@ -22,7 +22,7 @@
       </div>
 
       <div class="form-field">
-        <input type="submit" value="submit">
+        <input type="submit" value="submit" name="submit">
       </div>
     </form>
   </body>

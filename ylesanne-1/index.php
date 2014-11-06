@@ -12,7 +12,7 @@
 	    $age = 14; 
 ?>
 
-	    <a href='<?php echo $site_link . "?firstname= . $username . &age=" . $age ?>'>
+	    <a href='<?php echo "{$site_link} . ?firstname= . {$username} . &age= . {$age}" ?>'>
 	    	Submit
 	    </a>
   <body>

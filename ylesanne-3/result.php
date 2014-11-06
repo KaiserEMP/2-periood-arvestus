@@ -6,8 +6,16 @@
   </head>
 
   <body>
+	<?php 
+      $username = $_POST["username"];
+      $sex = $_POST["sex"];
+      $submit = $_POST['submit']; 
+    ?> 
+
+
     <!-- Kustuta see funktsioon (print_r() koos <pre> elemendiga) pärast seda, kui oled veendunud, et programm töötab. -->
     <pre><?php print_r($_POST); ?></pre>
+
 
     <div><a href="index.php">Mine tagasi</a></div>
   </body>
